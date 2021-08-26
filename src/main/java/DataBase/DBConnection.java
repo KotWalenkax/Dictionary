@@ -5,17 +5,12 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 
 import java.sql.*;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.function.Predicate;
-
-import static java.sql.Types.NULL;
 
 public class DBConnection {
 
     private static String URL = "jdbc:postgresql:Dictionary";
     private static String USER = "postgres";
-    private static String PASSWORD = "5878041";
+    private static String PASSWORD = "000";
 
     Connection c = null;
     PreparedStatement st = null;
@@ -42,7 +37,7 @@ public class DBConnection {
             Class.forName("org.postgresql.Driver");
             c = DriverManager
                     .getConnection("jdbc:postgresql://localhost:5432/Dictionary",
-                            "postgres", "5878041");
+                            "postgres", "000");
             System.out.println("Opened database successfully");
             c.setAutoCommit(false);
 
@@ -76,7 +71,7 @@ public class DBConnection {
             Class.forName("org.postgresql.Driver");
             c = DriverManager
                     .getConnection("jdbc:postgresql://localhost:5432/Dictionary",
-                            "postgres", "5878041");
+                            "postgres", "000");
             c.setAutoCommit(false);
             System.out.println("Opened database successfully");
 

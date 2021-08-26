@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity"
+      maxWidth="-Infinity"
+      minHeight="-Infinity"
+      minWidth="-Infinity"
+      prefHeight="400.0"
+      prefWidth="600.0"
+
+      fx:controller="Controllers.ListController"
+      xmlns="http://javafx.com/javafx/11.0.1"
+      xmlns:fx="http://javafx.com/fxml/1">
+    <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0">
+      <columns>
+          <TableColumn fx:id="idColumn" minWidth="-1.0" prefWidth="97.0" text="ID"/>
+          <TableColumn fx:id="wordColumn" minWidth="-1.0" prefWidth="75.0" text="WORD"/>
+          <TableColumn fx:id="translationColumn" minWidth="-1.0" prefWidth="97.0" text="TRANSLATION"/>
+      </columns>
+    </TableView>
+</VBox>
